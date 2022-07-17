@@ -44,7 +44,7 @@ After dataprocessing or cleaning, it is very crucial to visualize dataset, there
 
 Now data is divided into two sets one is *training dataset* which is used to train the model (just like a new born child learns by sensing things around him), the other dataset is *testing dataset* which is used to evaluate or predict the accuracy of model. The machine uses its model, apply to testing dataset to give out predicted results. The predicted output then compared to final result in actual dataset (In this case it is labeled as *class*). That's why it is necessary to first drop that column named class, before we train our model.
 
-```
+```python
 X = data.drop('class', axis = 1)
 y = data['class']
 
@@ -55,7 +55,7 @@ x_train, x_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, rand
 > **Data Modelling**
 #### 1. Random Forest Regressor
 A random forest is a meta estimator that fits a number of classifying decision trees on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting.
-```
+```python
 model = RandomForestRegressor()
 model.fit(x_train, y_train)
 ```
@@ -64,7 +64,7 @@ model.fit(x_train, y_train)
 | 1 |	Random Forest Regressor	| 0.895577 |
 
 **KFold cross validation**
-```
+```python
 k = 20
 kfold = KFold(n_splits = k, random_state = 10, shuffle=True)
 k_result = cross_val_score(model, X, y, cv = kfold)
@@ -84,7 +84,7 @@ results
 
 
 #### 2. Gradient Boosting Regressor
-```
+```python
 model = GradientBoostingRegressor()
 model.fit(x_train, y_train)
 ```
@@ -99,7 +99,7 @@ model.fit(x_train, y_train)
 
 
 #### 3. AdaBoosting Regressor
-```
+```python
 model = AdaBoostRegressor()
 model.fit(x_train, y_train)
 ```
@@ -114,7 +114,7 @@ model.fit(x_train, y_train)
 
 
 #### 4. KNeighbors Regressor
-```
+```python
 model = KNeighborsRegressor()
 model.fit(x_train, y_train)
 ```
@@ -129,7 +129,7 @@ model.fit(x_train, y_train)
 
 
 #### 5. Bagging Regressor
-```
+```python
 model = BaggingRegressor()
 model.fit(x_train, y_train)
 ```
@@ -144,7 +144,7 @@ model.fit(x_train, y_train)
 
 
 #### 6. Support vector regressor
-```
+```python
 model = SVR(kernel = 'linear')
 model.fit(x_train, y_train)
 ```
@@ -159,11 +159,11 @@ model.fit(x_train, y_train)
 
 
 #### 7. XG Boost Regressor
-```
+```python
 import xgboost as xgb
 from xgboost.sklearn import XGBRegressor
 ```
-```
+```python
 xgb = XGBRegressor()
 xgb.fit(x_train, y_train)
 ```
@@ -178,7 +178,7 @@ xgb.fit(x_train, y_train)
 
 
 #### 8. Decision Tree Regressor
-```
+```python
 dec_model = DecisionTreeRegressor()
 dec_model.fit(x_train, y_train)
 ```
@@ -195,7 +195,7 @@ dec_model.fit(x_train, y_train)
 feature selection method that fits a model and removes the weakest feature (or features) until the specified number of features is reached.
 
 #### 9. New Decision Tree Regressor
-```
+```python
 new_dec_model = DecisionTreeRegressor()
 new_dec_model.fit(x_train, y_train)
 ```
@@ -211,7 +211,7 @@ new_dec_model.fit(x_train, y_train)
 ![map](https://github.com/Abhishek-k-git/Compressive_strength_of_concrete/blob/main/images/map.png)
 
 #### 10. pruned decision tree
-```
+```python
 new_dec_model = DecisionTreeRegressor()
 new_dec_model.fit(x_train, y_train)
 ```
