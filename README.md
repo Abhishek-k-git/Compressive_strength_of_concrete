@@ -7,7 +7,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
 ![GitHub issues](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)
-![GitHub](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
 
 Concrete is the most important material in civil engineering. The concrete compressive strength is a highly nonlinear function of age and ingredients. The Compressive strength of concrete determines the quality of concrete. The manual testing of concretes require, making small cylinderical blocks of concretes with different proportions of materials and testing against compression. This exhausts both time and money.
 
