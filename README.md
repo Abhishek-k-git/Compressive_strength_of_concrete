@@ -224,4 +224,4 @@ new_dec_model.fit(x_train, y_train)
 | :--: | :------: | :----------: |
 | 20 | pruned decision tree KFold	| 0.663904 |
 
->> ```XG Boost Regressor KFold``` is best performing algorithm out of these with an accuracy of ```0.929891```
+> ```XG Boost Regressor KFold``` is best performing algorithm out of these with an accuracy of ```0.929891```
